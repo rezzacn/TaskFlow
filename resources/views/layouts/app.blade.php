@@ -310,7 +310,7 @@
             {{-- Footer --}}
             <footer class="border-t border-dark-200 bg-white/60 backdrop-blur-sm px-4 sm:px-6 lg:px-8 py-4">
                 <div class="flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-dark-400">
-                    <p>&copy; {{ date('Y') }} Sistem Absensi Karyawan Deteksi Lokasi.</p>
+                    <p>&copy; {{ date('Y') }} TaskFlow - Sistem Manajement Tugas.</p>
 
                 </div>
             </footer>

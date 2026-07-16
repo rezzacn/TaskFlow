@@ -42,6 +42,38 @@
                         <span class="sidebar-label transition-all duration-300">Dashboard</span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('task') }}"
+                        class="group flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200
+                        {{ request()->routeIs('task')
+                            ? 'bg-primary-600/20 text-primary-400 menu-active'
+                            : 'text-dark-300 hover:bg-white/5 hover:text-white' }}">
+                        <div
+                            class="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-200
+                            {{ request()->routeIs('task')
+                                ? 'bg-primary-600/30 text-primary-400'
+                                : 'bg-white/5 text-dark-400 group-hover:bg-white/10 group-hover:text-white' }}">
+                            <i class='bx bx-list-check text-lg'></i>
+                        </div>
+                        <span class="sidebar-label transition-all duration-300">Kelola Task</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('client') }}"
+                        class="group flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200
+                        {{ request()->routeIs('client') || request()->routeIs('client.*')
+                            ? 'bg-primary-600/20 text-primary-400 menu-active'
+                            : 'text-dark-300 hover:bg-white/5 hover:text-white' }}">
+                        <div
+                            class="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-200
+                            {{ request()->routeIs('client') || request()->routeIs('client.*')
+                                ? 'bg-primary-600/30 text-primary-400'
+                                : 'bg-white/5 text-dark-400 group-hover:bg-white/10 group-hover:text-white' }}">
+                            <i class='bx bx-user-pin text-lg'></i>
+                        </div>
+                        <span class="sidebar-label transition-all duration-300">Kelola Client</span>
+                    </a>
+                </li>
             </ul>
         </div>
 
