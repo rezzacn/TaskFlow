@@ -297,7 +297,7 @@
                     <img src="{{ asset('img/logo.png') }}" alt="">
                 </div>
                 <h1 class="text-2xl sm:text-3xl font-bold text-black tracking-tight fade-in-up fade-in-up-delay-1">
-                    TaskFlow
+                    TaskFlow - UPDATE FITUR LOGIN
                 </h1>
                 <p
                     class="text-primary-300/80 text-sm mt-2 max-w-xs mx-auto leading-relaxed fade-in-up fade-in-up-delay-2">
